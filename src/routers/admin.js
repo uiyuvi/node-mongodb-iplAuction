@@ -55,6 +55,25 @@ adminRouter.patch('/editPlayer/:playerId', adminAuth, async function (req, res) 
     return res.status(200).json(updatedResponse);
 });
 
+adminRouter.patch('/playerBought/:teamName', adminAuth, async function (req, res) {
+    console.log("edit player bought", req.params.teamName, req.body.id);
+    Players.find({ _id: req.body.id }, async function (err, data) {
+        console.log('inside find player playerBought', req.body.id)
+        if (err) {
+            console.log('error')
+            return res.status(400).json({ error: err });
+        }
+        if (data && data.length > 0) {
+            const updatedResponse = await Players.updateOne({ _id: req.body.id }, { bought_by: data[0].bidded_by, unsold: false });
+            return res.status(200).json(updatedResponse);
+        }
+        console.log('player not found', req.params.playerId)
+        return res.status(400).json({ error: "invalid request" });
+    });
+
+
+});
+
 adminRouter.delete('/deletePlayer/:playerId', adminAuth, async function (req, res) {
     console.log("delete player", req.params.playerId, req.body.name);
 
