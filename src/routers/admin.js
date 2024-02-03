@@ -70,8 +70,42 @@ adminRouter.patch('/playerBought/:teamName', adminAuth, async function (req, res
         console.log('player not found', req.params.playerId)
         return res.status(400).json({ error: "invalid request" });
     });
+});
 
 
+adminRouter.patch('/players/bid/:playerId', adminAuth, async function (req, res) {
+    console.log("edit player bought", req.body.teamName, req.params.playerId);
+    Players.find({ _id: req.params.playerId }, async function (err, data) {
+        console.log('inside find player bid', req.params.playerId)
+        if (err) {
+            console.log('error')
+            return res.status(400).json({ error: err });
+        }
+        if (data && data.length > 0) {
+            console.log('originalsoldprice', data[0].sold_price, 'base price', data[0].base_price)
+            let newSoldPrice;
+            let newBasePrice;
+            let soldPrice = data[0].sold_price;
+            if (soldPrice === 0) {
+                soldPrice = data[0].base_price;
+            }
+            if (1000000 <= soldPrice && soldPrice < 10000000) {
+                soldPrice += 500000;
+            }else if (10000000 <= soldPrice && soldPrice < 50000000) {
+                soldPrice += 1000000;
+            }else if (50000000 <= soldPrice && soldPrice < 100000000) {
+                soldPrice += 2500000;
+            }else if (100000000 <= soldPrice && soldPrice < 200000000) {
+                soldPrice += 5000000;
+            }else if (200000000 <= soldPrice) {
+                soldPrice += 10000000;
+            }
+            const updatedResponse = await Players.updateOne({ _id: req.params.playerId }, { bidded_by: req.body.teamName, sold_price: soldPrice });
+            return res.status(200).json(updatedResponse);
+        }
+        console.log('player not found', req.params.playerId)
+        return res.status(400).json({ error: "invalid request" });
+    });
 });
 
 adminRouter.delete('/deletePlayer/:playerId', adminAuth, async function (req, res) {
