@@ -7,6 +7,9 @@ const playersSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true,
+        minlength: 3,
+        // Built in match validator.
+        match: /[a-zA-Z]+$/,
     },
     age: {
         type: Number,
