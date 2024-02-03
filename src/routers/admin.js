@@ -30,4 +30,22 @@ adminRouter.post('/addPlayer', adminAuth, (req, res) => {
     });
 });
 
+adminRouter.get('/viewPlayer/:playerId', adminAuth, (req, res) => {
+    console.log("view player", req.params.playerId)
+
+    Players.find({ _id: req.params.playerId }, function (err, data) {
+        console.log('inside find player', req.params.playerId)
+        if (err) {
+            console.log('error')
+            return res.status(400).json({ error: err });
+        }
+        if (data && data.length > 0) {
+            console.log('user with same name exist', data[0])
+            return res.status(200).json(data[0]);
+        }
+        console.log('player not found', req.params.playerId)
+        return res.status(400).json({ error: "invalid request" });
+    });
+});
+
 module.exports = adminRouter;
