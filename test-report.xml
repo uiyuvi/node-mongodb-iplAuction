@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite id="0" name="D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\test\admin.test.js" errors="0" package="D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\test\admin.test.js" hostname="localhost" tests="24" failures="24" time="7.597" timestamp="2024-02-03T09:52:37">
+    <properties>
+    </properties>
+    <testcase classname="Admin successful login" name="Admin successful login" time="0">
+      <failure message="Error: expected 200 &quot;OK&quot;, got 404 &quot;Not Found&quot;
+    at Object.&lt;anonymous&gt; (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\test\admin.test.js:14:8)
+    at Object.asyncJestTest (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:73:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+----
+    at Test._assertStatus (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:252:14)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:308:13
+    at Test._assertFunction (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:285:13)
+    at Test.assert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:164:23)
+    at Server.localAssert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:120:14)
+    at Object.onceWrapper (node:events:632:28)
+    at Server.emit (node:events:518:28)
+    at emitCloseNT (node:net:2279:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Admin unsuccessful login" name="Admin unsuccessful login" time="0">
+      <failure message="Error: expected 400 &quot;Bad Request&quot;, got 404 &quot;Not Found&quot;
+    at Object.&lt;anonymous&gt; (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\test\admin.test.js:24:8)
+    at Object.asyncJestTest (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:73:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+----
+    at Test._assertStatus (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:252:14)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:308:13
+    at Test._assertFunction (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:285:13)
+    at Test.assert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:164:23)
+    at Server.localAssert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:120:14)
+    at Object.onceWrapper (node:events:632:28)
+    at Server.emit (node:events:518:28)
+    at emitCloseNT (node:net:2279:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Admin adding a new player" name="Admin adding a new player" time="0">
+      <failure message="Error: expected 201 &quot;Created&quot;, got 404 &quot;Not Found&quot;
+    at Object.&lt;anonymous&gt; (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\test\admin.test.js:38:12)
+    at Object.asyncJestTest (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:73:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+----
+    at Test._assertStatus (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:252:14)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:308:13
+    at Test._assertFunction (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:285:13)
+    at Test.assert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:164:23)
+    at Server.localAssert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:120:14)
+    at Object.onceWrapper (node:events:632:28)
+    at Server.emit (node:events:518:28)
+    at emitCloseNT (node:net:2279:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Admin adding a new player with invalid name" name="Admin adding a new player with invalid name" time="0">
+      <failure message="Error: expected 400 &quot;Bad Request&quot;, got 404 &quot;Not Found&quot;
+    at Object.&lt;anonymous&gt; (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\test\admin.test.js:54:12)
+    at Object.asyncJestTest (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:73:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+----
+    at Test._assertStatus (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:252:14)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:308:13
+    at Test._assertFunction (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:285:13)
+    at Test.assert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:164:23)
+    at Server.localAssert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:120:14)
+    at Object.onceWrapper (node:events:632:28)
+    at Server.emit (node:events:518:28)
+    at emitCloseNT (node:net:2279:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Admin adding a new player with invalid age" name="Admin adding a new player with invalid age" time="0">
+      <failure message="Error: expected 400 &quot;Bad Request&quot;, got 404 &quot;Not Found&quot;
+    at Object.&lt;anonymous&gt; (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\test\admin.test.js:68:12)
+    at Object.asyncJestTest (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:73:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+----
+    at Test._assertStatus (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:252:14)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:308:13
+    at Test._assertFunction (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:285:13)
+    at Test.assert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:164:23)
+    at Server.localAssert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:120:14)
+    at Object.onceWrapper (node:events:632:28)
+    at Server.emit (node:events:518:28)
+    at emitCloseNT (node:net:2279:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Admin adding a new player with invalid type" name="Admin adding a new player with invalid type" time="0">
+      <failure message="Error: expected 400 &quot;Bad Request&quot;, got 404 &quot;Not Found&quot;
+    at Object.&lt;anonymous&gt; (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\test\admin.test.js:82:12)
+    at Object.asyncJestTest (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:73:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+----
+    at Test._assertStatus (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:252:14)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:308:13
+    at Test._assertFunction (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:285:13)
+    at Test.assert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:164:23)
+    at Server.localAssert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:120:14)
+    at Object.onceWrapper (node:events:632:28)
+    at Server.emit (node:events:518:28)
+    at emitCloseNT (node:net:2279:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Admin adding a new player with invalid bats option" name="Admin adding a new player with invalid bats option" time="0">
+      <failure message="Error: expected 400 &quot;Bad Request&quot;, got 404 &quot;Not Found&quot;
+    at Object.&lt;anonymous&gt; (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\test\admin.test.js:96:12)
+    at Object.asyncJestTest (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:73:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+----
+    at Test._assertStatus (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:252:14)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:308:13
+    at Test._assertFunction (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:285:13)
+    at Test.assert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:164:23)
+    at Server.localAssert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:120:14)
+    at Object.onceWrapper (node:events:632:28)
+    at Server.emit (node:events:518:28)
+    at emitCloseNT (node:net:2279:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Admin adding a new player with invalid bowl option" name="Admin adding a new player with invalid bowl option" time="0">
+      <failure message="Error: expected 400 &quot;Bad Request&quot;, got 404 &quot;Not Found&quot;
+    at Object.&lt;anonymous&gt; (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\test\admin.test.js:110:12)
+    at Object.asyncJestTest (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:73:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+----
+    at Test._assertStatus (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:252:14)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:308:13
+    at Test._assertFunction (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:285:13)
+    at Test.assert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:164:23)
+    at Server.localAssert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:120:14)
+    at Object.onceWrapper (node:events:632:28)
+    at Server.emit (node:events:518:28)
+    at emitCloseNT (node:net:2279:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Admin adding a new player with invalid bowling style option" name="Admin adding a new player with invalid bowling style option" time="0">
+      <failure message="Error: expected 400 &quot;Bad Request&quot;, got 404 &quot;Not Found&quot;
+    at Object.&lt;anonymous&gt; (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\test\admin.test.js:124:12)
+    at Object.asyncJestTest (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:73:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+----
+    at Test._assertStatus (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:252:14)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:308:13
+    at Test._assertFunction (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:285:13)
+    at Test.assert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:164:23)
+    at Server.localAssert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:120:14)
+    at Object.onceWrapper (node:events:632:28)
+    at Server.emit (node:events:518:28)
+    at emitCloseNT (node:net:2279:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Viewing a player profile" name="Viewing a player profile" time="0">
+      <failure message="Error: expected 200 &quot;OK&quot;, got 404 &quot;Not Found&quot;
+    at Object.&lt;anonymous&gt; (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\test\admin.test.js:131:10)
+    at Object.asyncJestTest (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:73:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+----
+    at Test._assertStatus (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:252:14)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:308:13
+    at Test._assertFunction (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:285:13)
+    at Test.assert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:164:23)
+    at Server.localAssert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:120:14)
+    at Object.onceWrapper (node:events:632:28)
+    at Server.emit (node:events:518:28)
+    at emitCloseNT (node:net:2279:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Updating player details" name="Updating player details" time="0">
+      <failure message="Error: expected 200 &quot;OK&quot;, got 404 &quot;Not Found&quot;
+    at Object.&lt;anonymous&gt; (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\test\admin.test.js:142:12)
+    at Object.asyncJestTest (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:73:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+----
+    at Test._assertStatus (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:252:14)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:308:13
+    at Test._assertFunction (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:285:13)
+    at Test.assert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:164:23)
+    at Server.localAssert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:120:14)
+    at Object.onceWrapper (node:events:632:28)
+    at Server.emit (node:events:518:28)
+    at emitCloseNT (node:net:2279:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Deleting a player" name="Deleting a player" time="0">
+      <failure message="Error: expected 200 &quot;OK&quot;, got 404 &quot;Not Found&quot;
+    at Object.&lt;anonymous&gt; (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\test\admin.test.js:151:10)
+    at Object.asyncJestTest (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:73:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+----
+    at Test._assertStatus (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:252:14)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:308:13
+    at Test._assertFunction (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:285:13)
+    at Test.assert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:164:23)
+    at Server.localAssert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:120:14)
+    at Object.onceWrapper (node:events:632:28)
+    at Server.emit (node:events:518:28)
+    at emitCloseNT (node:net:2279:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Viewing players of a team" name="Viewing players of a team" time="0">
+      <failure message="Error: expected 200 &quot;OK&quot;, got 404 &quot;Not Found&quot;
+    at Object.&lt;anonymous&gt; (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\test\admin.test.js:160:10)
+    at Object.asyncJestTest (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:73:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+----
+    at Test._assertStatus (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:252:14)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:308:13
+    at Test._assertFunction (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:285:13)
+    at Test.assert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:164:23)
+    at Server.localAssert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:120:14)
+    at Object.onceWrapper (node:events:632:28)
+    at Server.emit (node:events:518:28)
+    at emitCloseNT (node:net:2279:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Updating an sold detail in auction" name="Updating an sold detail in auction" time="0">
+      <failure message="Error: expected 200 &quot;OK&quot;, got 404 &quot;Not Found&quot;
+    at Object.&lt;anonymous&gt; (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\test\admin.test.js:171:10)
+    at Object.asyncJestTest (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:73:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+----
+    at Test._assertStatus (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:252:14)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:308:13
+    at Test._assertFunction (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:285:13)
+    at Test.assert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:164:23)
+    at Server.localAssert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:120:14)
+    at Object.onceWrapper (node:events:632:28)
+    at Server.emit (node:events:518:28)
+    at emitCloseNT (node:net:2279:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Bidding a player" name="Bidding a player" time="0">
+      <failure message="Error: expected 200 &quot;OK&quot;, got 404 &quot;Not Found&quot;
+    at Object.&lt;anonymous&gt; (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\test\admin.test.js:183:10)
+    at Object.asyncJestTest (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:73:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+----
+    at Test._assertStatus (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:252:14)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:308:13
+    at Test._assertFunction (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:285:13)
+    at Test.assert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:164:23)
+    at Server.localAssert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:120:14)
+    at Object.onceWrapper (node:events:632:28)
+    at Server.emit (node:events:518:28)
+    at emitCloseNT (node:net:2279:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Bidding a player" name="Bidding a player" time="0">
+      <failure message="Error: expected 200 &quot;OK&quot;, got 404 &quot;Not Found&quot;
+    at Object.&lt;anonymous&gt; (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\test\admin.test.js:196:10)
+    at Object.asyncJestTest (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:73:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+----
+    at Test._assertStatus (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:252:14)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:308:13
+    at Test._assertFunction (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:285:13)
+    at Test.assert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:164:23)
+    at Server.localAssert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:120:14)
+    at Object.onceWrapper (node:events:632:28)
+    at Server.emit (node:events:518:28)
+    at emitCloseNT (node:net:2279:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Bidding a player" name="Bidding a player" time="0">
+      <failure message="Error: expected 200 &quot;OK&quot;, got 404 &quot;Not Found&quot;
+    at Object.&lt;anonymous&gt; (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\test\admin.test.js:210:14)
+    at Object.asyncJestTest (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:73:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+----
+    at Test._assertStatus (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:252:14)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:308:13
+    at Test._assertFunction (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:285:13)
+    at Test.assert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:164:23)
+    at Server.localAssert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:120:14)
+    at Object.onceWrapper (node:events:632:28)
+    at Server.emit (node:events:518:28)
+    at emitCloseNT (node:net:2279:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Bidding a player" name="Bidding a player" time="0">
+      <failure message="Error: expected 200 &quot;OK&quot;, got 404 &quot;Not Found&quot;
+    at Object.&lt;anonymous&gt; (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\test\admin.test.js:227:14)
+    at Object.asyncJestTest (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:73:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+----
+    at Test._assertStatus (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:252:14)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:308:13
+    at Test._assertFunction (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:285:13)
+    at Test.assert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:164:23)
+    at Server.localAssert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:120:14)
+    at Object.onceWrapper (node:events:632:28)
+    at Server.emit (node:events:518:28)
+    at emitCloseNT (node:net:2279:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Bidding a player" name="Bidding a player" time="0">
+      <failure message="Error: expected 200 &quot;OK&quot;, got 404 &quot;Not Found&quot;
+    at Object.&lt;anonymous&gt; (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\test\admin.test.js:244:14)
+    at Object.asyncJestTest (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:73:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+----
+    at Test._assertStatus (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:252:14)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:308:13
+    at Test._assertFunction (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:285:13)
+    at Test.assert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:164:23)
+    at Server.localAssert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:120:14)
+    at Object.onceWrapper (node:events:632:28)
+    at Server.emit (node:events:518:28)
+    at emitCloseNT (node:net:2279:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Displaying player for auction" name="Displaying player for auction" time="0">
+      <failure message="Error: expected 200 &quot;OK&quot;, got 404 &quot;Not Found&quot;
+    at Object.&lt;anonymous&gt; (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\test\admin.test.js:257:10)
+    at Object.asyncJestTest (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:73:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+----
+    at Test._assertStatus (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:252:14)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:308:13
+    at Test._assertFunction (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:285:13)
+    at Test.assert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:164:23)
+    at Server.localAssert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:120:14)
+    at Object.onceWrapper (node:events:632:28)
+    at Server.emit (node:events:518:28)
+    at emitCloseNT (node:net:2279:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Displaying player for auction" name="Displaying player for auction" time="0">
+      <failure message="Error: expected 200 &quot;OK&quot;, got 404 &quot;Not Found&quot;
+    at Object.&lt;anonymous&gt; (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\test\admin.test.js:266:10)
+    at Object.asyncJestTest (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:73:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+----
+    at Test._assertStatus (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:252:14)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:308:13
+    at Test._assertFunction (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:285:13)
+    at Test.assert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:164:23)
+    at Server.localAssert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:120:14)
+    at Object.onceWrapper (node:events:632:28)
+    at Server.emit (node:events:518:28)
+    at emitCloseNT (node:net:2279:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Displaying player for auction" name="Displaying player for auction" time="0">
+      <failure message="Error: expected 200 &quot;OK&quot;, got 404 &quot;Not Found&quot;
+    at Object.&lt;anonymous&gt; (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\test\admin.test.js:278:10)
+    at Object.asyncJestTest (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:73:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+----
+    at Test._assertStatus (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:252:14)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:308:13
+    at Test._assertFunction (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:285:13)
+    at Test.assert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:164:23)
+    at Server.localAssert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:120:14)
+    at Object.onceWrapper (node:events:632:28)
+    at Server.emit (node:events:518:28)
+    at emitCloseNT (node:net:2279:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Displaying player for auction" name="Displaying player for auction" time="0">
+      <failure message="Error: expected 200 &quot;OK&quot;, got 404 &quot;Not Found&quot;
+    at Object.&lt;anonymous&gt; (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\test\admin.test.js:287:10)
+    at Object.asyncJestTest (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:73:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+----
+    at Test._assertStatus (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:252:14)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:308:13
+    at Test._assertFunction (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:285:13)
+    at Test.assert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:164:23)
+    at Server.localAssert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:120:14)
+    at Object.onceWrapper (node:events:632:28)
+    at Server.emit (node:events:518:28)
+    at emitCloseNT (node:net:2279:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Displaying player for auction" name="Displaying player for auction" time="0">
+      <failure message="Error: expected 200 &quot;OK&quot;, got 404 &quot;Not Found&quot;
+    at Object.&lt;anonymous&gt; (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\test\admin.test.js:299:10)
+    at Object.asyncJestTest (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\jest-jasmine2\build\queueRunner.js:73:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+----
+    at Test._assertStatus (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:252:14)
+    at D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:308:13
+    at Test._assertFunction (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:285:13)
+    at Test.assert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:164:23)
+    at Server.localAssert (D:\gitworkspace\react\wings2-assessments\330045ae-8f25-4313-b1c5-7d1bc3224541\node_modules\supertest\lib\test.js:120:14)
+    at Object.onceWrapper (node:events:632:28)
+    at Server.emit (node:events:518:28)
+    at emitCloseNT (node:net:2279:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21)" type="AssertionError">
+      </failure>
+    </testcase>
+    <system-out/>
+    <system-err/>
+  </testsuite>
+</testsuites>
