@@ -24,10 +24,12 @@ const playersSchema = new mongoose.Schema({
     bats: {
         type: String,
         required: true,
+        enum : ["Right", "Left", "NA"]
     },
     bowls: {
         type: String,
         required: true,
+        enum : ["Right", "Left", "NA"]
     },
     bowling_style: {
         type: String,
