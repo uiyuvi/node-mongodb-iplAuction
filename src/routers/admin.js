@@ -48,6 +48,13 @@ adminRouter.get('/viewPlayer/:playerId', adminAuth, (req, res) => {
     });
 });
 
+adminRouter.patch('/editPlayer/:playerId', adminAuth, async function (req, res) {
+    console.log("edit player", req.params.playerId, req.body.name);
+
+    const updatedResponse = await Players.updateOne({ _id: req.params.playerId }, { name: req.body.name });
+    return res.status(200).json(updatedResponse);
+});
+
 adminRouter.get('/viewPlayers/:teamName', adminAuth, (req, res) => {
     console.log("view player", req.params.teamName)
 
