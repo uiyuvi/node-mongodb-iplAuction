@@ -48,4 +48,22 @@ adminRouter.get('/viewPlayer/:playerId', adminAuth, (req, res) => {
     });
 });
 
+adminRouter.get('/viewPlayers/:teamName', adminAuth, (req, res) => {
+    console.log("view player", req.params.teamName)
+
+    Players.find({ bought_by: req.params.teamName }, function (err, data) {
+        console.log('inside find player', req.params.teamName)
+        if (err) {
+            console.log('error')
+            return res.status(400).json({ error: err });
+        }
+        if (data && data.length > 0) {
+            console.log('user with same name exist', data)
+            return res.status(200).json(data);
+        }
+        console.log('player not found', req.params.teamName)
+        return res.status(400).json({ error: "invalid request" });
+    });
+});
+
 module.exports = adminRouter;
