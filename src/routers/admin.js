@@ -55,6 +55,13 @@ adminRouter.patch('/editPlayer/:playerId', adminAuth, async function (req, res) 
     return res.status(200).json(updatedResponse);
 });
 
+adminRouter.delete('/deletePlayer/:playerId', adminAuth, async function (req, res) {
+    console.log("delete player", req.params.playerId, req.body.name);
+
+    const updatedResponse = await Players.deleteOne({ _id: req.params.playerId });
+    return res.status(200).json(updatedResponse);
+});
+
 adminRouter.get('/viewPlayers/:teamName', adminAuth, (req, res) => {
     console.log("view player", req.params.teamName)
 
