@@ -1,5 +1,4 @@
 const express = require("express");
-require("../mongoose/db/mongoose");
 const adminAuth = require('../middlewares/adminAuth'); // Import the middleware
 const Players = require("../mongoose/models/players")
 //setting up the admin router
@@ -83,21 +82,19 @@ adminRouter.patch('/players/bid/:playerId', adminAuth, async function (req, res)
         }
         if (data && data.length > 0) {
             console.log('originalsoldprice', data[0].sold_price, 'base price', data[0].base_price)
-            let newSoldPrice;
-            let newBasePrice;
             let soldPrice = data[0].sold_price;
             if (soldPrice === 0) {
                 soldPrice = data[0].base_price;
             }
             if (1000000 <= soldPrice && soldPrice < 10000000) {
                 soldPrice += 500000;
-            }else if (10000000 <= soldPrice && soldPrice < 50000000) {
+            } else if (10000000 <= soldPrice && soldPrice < 50000000) {
                 soldPrice += 1000000;
-            }else if (50000000 <= soldPrice && soldPrice < 100000000) {
+            } else if (50000000 <= soldPrice && soldPrice < 100000000) {
                 soldPrice += 2500000;
-            }else if (100000000 <= soldPrice && soldPrice < 200000000) {
+            } else if (100000000 <= soldPrice && soldPrice < 200000000) {
                 soldPrice += 5000000;
-            }else if (200000000 <= soldPrice) {
+            } else if (200000000 <= soldPrice) {
                 soldPrice += 10000000;
             }
             const updatedResponse = await Players.updateOne({ _id: req.params.playerId }, { bidded_by: req.body.teamName, sold_price: soldPrice });
@@ -131,6 +128,35 @@ adminRouter.get('/viewPlayers/:teamName', adminAuth, (req, res) => {
         console.log('player not found', req.params.teamName)
         return res.status(400).json({ error: "invalid request" });
     });
+});
+
+adminRouter.get('/displayPlayer/:count', adminAuth, (req, res) => {
+    console.log("display player", req.params.count, req.query.type);
+    Players.find(function (err, fgh) {
+        if (err) return console.error(err);
+        console.table(JSON.stringify(fgh));
+    });
+    Players.aggregate(
+        [
+            { $sort: { base_price: -1 } },
+            { $match: { unsold: true, type: req.query.type, displayed_count: parseInt(req.params.count) } },
+            { $limit: 1 },
+            // { $set: { displayed_count: parseInt(req.params.count) + 1 } }
+        ]).
+        exec(async function (err, response) {
+            if (err) {
+                console.log('player not found', req.query.type)
+                return res.status(400).json({ error: "invalid request" });
+            }
+            await Players.updateOne({ _id: response[0]._id }, { displayed_count: parseInt(req.params.count) + 1 });
+            Players.find({ _id: response[0]._id }, function (err, data) {
+                console.log('display player', data)
+
+                return res.status(200).json(data);
+            })
+        })
+
+
 });
 
 module.exports = adminRouter;
