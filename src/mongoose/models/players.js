@@ -14,6 +14,7 @@ const playersSchema = new mongoose.Schema({
     age: {
         type: Number,
         required: true,
+        min: 15
     },
     type: {
         type: String,
