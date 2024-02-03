@@ -132,10 +132,6 @@ adminRouter.get('/viewPlayers/:teamName', adminAuth, (req, res) => {
 
 adminRouter.get('/displayPlayer/:count', adminAuth, (req, res) => {
     console.log("display player", req.params.count, req.query.type);
-    Players.find(function (err, fgh) {
-        if (err) return console.error(err);
-        console.table(JSON.stringify(fgh));
-    });
     Players.aggregate(
         [
             { $sort: { base_price: -1 } },
