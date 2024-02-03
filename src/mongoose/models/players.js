@@ -19,21 +19,22 @@ const playersSchema = new mongoose.Schema({
     type: {
         type: String,
         required: true,
-        enum : ["Batsman", "Bowler", "All-rounder"]
+        enum: ["Batsman", "Bowler", "All-rounder"]
     },
     bats: {
         type: String,
         required: true,
-        enum : ["Right", "Left", "NA"]
+        enum: ["Right", "Left", "NA"]
     },
     bowls: {
         type: String,
         required: true,
-        enum : ["Right", "Left", "NA"]
+        enum: ["Right", "Left", "NA"]
     },
     bowling_style: {
         type: String,
         required: true,
+        enum: ["Fast", "Medium", "Spin", "Leg-spin", "Chinaman", "NA"]
     },
     bat_avg: {
         type: Number,
