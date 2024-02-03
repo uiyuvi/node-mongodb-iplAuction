@@ -19,6 +19,7 @@ const playersSchema = new mongoose.Schema({
     type: {
         type: String,
         required: true,
+        enum : ["Batsman", "Bowler", "All-rounder"]
     },
     bats: {
         type: String,
